@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+html, body, #root { min-height: 100%; margin: 0; }
+body {
+  font-family: Inter, "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  color: #393939;
+  background: #c2f3ff;
+}
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+/* 日程削除ボタン */
+.delete-day-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 4px 2px;
+    border: 1px solid #f0dede;
+    border-radius: 6px;
+    background: #fff8f8;
+    color: #d58d91;
+    font-size: 9px;
+    cursor: pointer;
+    transition: 0.2s;
+  
+}
+
+.delete-day-button:hover:not(:disabled) {
+  background: #ffbde8;
+  border-color: #ffc1e0;
+  color: #ff38a5;
+}
+
+.delete-day-button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.day-tab-wrap {
+  min-width: 145px;
+}
